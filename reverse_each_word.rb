@@ -7,7 +7,8 @@ def reverse_each_word(str)
 end
 
 def reverse_each_word(str)
-  new_array = []
   array = str.split
-  array.collect {|word| new_array << word.reverse }
+  array.collect do |word|
+    word = word.reverse_each_word
+  end
 end
