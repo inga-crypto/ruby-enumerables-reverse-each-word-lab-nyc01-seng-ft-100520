@@ -9,5 +9,5 @@ end
 def reverse_each_word(str)
   n_array = []
   n_array << str.split
-  n_array.collect {|w| w.reverse }
+  n_array.collect {|word| word.reverse }
 end
